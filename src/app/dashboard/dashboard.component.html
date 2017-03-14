@@ -1,0 +1,9 @@
+<p>
+  dashboard
+</p>
+
+<dashboard-task *ngFor="let task of tasks | async" [task]="task"></dashboard-task>
+
+
+<p><a [routerLink]="'/detail/new'">New Task</a></p>
+
