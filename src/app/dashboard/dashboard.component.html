@@ -1,5 +1,5 @@
 <p>
-  dashboard
+  Search: <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
 </p>
 
 <dashboard-task *ngFor="let task of tasks | async" [task]="task"></dashboard-task>
